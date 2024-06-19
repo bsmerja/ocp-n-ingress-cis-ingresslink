@@ -16,5 +16,14 @@ docker tag private-registry.nginx.com/nginx-ic/nginx-plus-ingress:<version-tag> 
 docker push <my-docker-registry>/nginx-plus-ingress:<version-tag>
 ```
 
-4. 
+# Installation of NGINX Operator and NGINX+ Ingress Controller in an OpenShift cluster using the OLM
+
+1. Please following:
+
+https://github.com/nginxinc/nginx-ingress-helm-operator/blob/main/docs/openshift-installation.md
+
+2. Install Nginx+ Ingress
+
+<img width="1315" alt="image" src="https://github.com/bsmerja/ocp-n-ingress-cis-ingresslink/assets/49276353/03471ae8-9801-4d3c-bd2b-4cafe055aabe">
+
 
