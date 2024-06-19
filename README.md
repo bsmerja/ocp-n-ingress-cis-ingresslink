@@ -26,4 +26,9 @@ https://github.com/nginxinc/nginx-ingress-helm-operator/blob/main/docs/openshift
 
 <img width="1315" alt="image" src="https://github.com/bsmerja/ocp-n-ingress-cis-ingresslink/assets/49276353/03471ae8-9801-4d3c-bd2b-4cafe055aabe">
 
+<img width="1383" alt="image" src="https://github.com/bsmerja/ocp-n-ingress-cis-ingresslink/assets/49276353/4305c75a-90a7-4832-8a8f-84895b11737c">
+
+
+
+
 
