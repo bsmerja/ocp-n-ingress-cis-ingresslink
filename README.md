@@ -35,13 +35,13 @@ oc create secret docker-registry <pull-secret-name> --docker-server=https://inde
 oc secrets link default <pull-secret-name> --for=pull -n nginx-ingress
 ```
 
-2. Install Nginx+ Ingress
+4. Install Nginx+ Ingress
 
 <img width="1315" alt="image" src="https://github.com/bsmerja/ocp-n-ingress-cis-ingresslink/assets/49276353/03471ae8-9801-4d3c-bd2b-4cafe055aabe">
 
 <img width="1383" alt="image" src="https://github.com/bsmerja/ocp-n-ingress-cis-ingresslink/assets/49276353/4305c75a-90a7-4832-8a8f-84895b11737c">
 
-3. Edit yaml file and incorporate following changes
+5. Edit yaml file and incorporate following changes
 
 Under Spec > Controller
 ```
@@ -71,8 +71,16 @@ Under Spec > Controller
     ...
     serviceAccount:
       annotations: {}
-      imagePullSecretName: <>
+      imagePullSecretName: <pull-secret-name>
       imagePullSecretsNames: []
+    ...
+    image:
+      pullPolicy: IfNotPresent
+      repository: <my-docker-registry>/nginx-plus-ingress
+      tag: <version-tag>
+     ...
+```
+    
 
 
 
