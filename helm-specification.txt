@@ -97,7 +97,7 @@ spec:
     replicaCount: 4
     serviceAccount:
       annotations: {}
-      imagePullSecretName: bsmerja-pull
+      imagePullSecretName: <pull-secret>
       imagePullSecretsNames: []
     autoscaling:
       annotations: {}
@@ -123,8 +123,8 @@ spec:
       secret: ''
     image:
       pullPolicy: IfNotPresent
-      repository: bsmerja/nginx-plus-ingress
-      tag: 3.5.2
+      repository: <your-rpivate-registry>/<imagename>
+      tag: <image-tag>
     dnsPolicy: ClusterFirst
     enableExternalDNS: false
     enableTLSPassthrough: false
